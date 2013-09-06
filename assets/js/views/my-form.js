@@ -30,9 +30,11 @@ define([
       _.each(this.collection.renderAll(), function(snippet){
         that.$el.append(snippet);
       });
+      var html = _.map(this.collection.renderAllClean(), function(e){return e.html()}).join("\n");
       $("#render").val(that.renderForm({
-        text: _.map(this.collection.renderAllClean(), function(e){return e.html()}).join("\n")
+        text: html
       }));
+      $("#preview").html(html);
       this.$el.appendTo("#build form");
       this.delegateEvents();
     }

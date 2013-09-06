@@ -40,6 +40,12 @@ textarea {
   cursor: text;
 }
 
+/* override the tabs padding to fit all tabs in one row. */
+.nav-tabs > li > a {
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
 .temp{
   width: 100%;
   height: 100%;
