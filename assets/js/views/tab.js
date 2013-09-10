@@ -26,7 +26,7 @@ define([
       $("#formtabs").append(this.tabNavTemplate({title: this.options.title, id: this.id}))
       // Render tab
       this.$el.attr("id", this.id);
-      this.$el.appendTo(".tab-content");
+      this.$el.appendTo("#components .tab-content");
       this.delegateEvents();
     }
   });

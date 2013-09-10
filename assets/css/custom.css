@@ -67,7 +67,7 @@ textarea {
   overflow: hidden;
 }
 
-#render{
+#render, #source textarea {
   min-height: 500px;
   font-family: monospace;
 }
@@ -108,9 +108,4 @@ form .popover form {
  -moz-user-select: none;
  -ms-user-select: none;
  user-select: none;
-}
-
-#target fieldset{
- width: 100%;
- overflow: hidden;
 }

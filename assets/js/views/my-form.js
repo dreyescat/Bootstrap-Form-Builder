@@ -35,6 +35,7 @@ define([
         text: html
       }));
       $("#preview").html(html);
+      $("#source textarea").val(JSON.stringify(this.collection, null, 2));
       this.$el.appendTo("#build form");
       this.delegateEvents();
     }
